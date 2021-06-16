@@ -81,8 +81,6 @@ set hlsearch
 " map space to clear highlighting
 map <Space> :noh<cr>
 
-
-
 " Unbind some useless/annoying default key bindings.
 nmap Q <Nop> " 'Q' in normal mode enters Ex mode. You almost never want this.
 
@@ -109,7 +107,6 @@ inoremap <Right> <ESC>:echoe "Use l"<CR>
 inoremap <Up>    <ESC>:echoe "Use k"<CR>
 inoremap <Down>  <ESC>:echoe "Use j"<CR>
 
-
 set showmode
 " use the system clipboard for yanking and pasting
 set clipboard=unnamed
@@ -125,16 +122,6 @@ inoremap jj <Esc>
 nnoremap <C-S> :w<CR>
 inoremap <C-S> <Esc>:w<CR>gi
 
-" map IntelliJ actions
-" map GotoFile
-nnoremap <leader>f :action GotoFile<CR>
-" map FileStructurePopup
-nnoremap <leader>s :action FileStructurePopup<CR>
-" map GotoAction
-nnoremap <leader>a :action GotoAction<CR>
-
-" map open current file in project panel
-" nnoremap <leader>of :action :::TODO:::
 
 " map recursively fold and unfold
 nnoremap zC :action CollapseRegionRecursively<CR>
@@ -174,6 +161,11 @@ vnoremap K 5kzz
 :nnoremap # #zz
 :nnoremap g* g*zz
 :nnoremap g# g#zz
+
+
+" merge two lines
+nnoremap M J
+
 
 " for removing hightlights of searching
 " nnoremap <Leader><space> :noh<cr>
