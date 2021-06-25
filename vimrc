@@ -138,8 +138,8 @@ vnoremap L $
 
 
 " move to the previous/next tab
-nmap <C-J> gTzz
-nmap <C-K> gtzz
+nmap <C-J> gT
+nmap <C-K> gt
 
 
 " remapping panels navigating
